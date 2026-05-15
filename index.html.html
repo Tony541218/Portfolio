@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brighton Portfolio</title>
+  <meta name="description" content="Student portfolio showcasing projects, skills, and achievements." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="logo">
+      <span class="logo-bracket">{</span>BM<span class="logo-bracket">}</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about"    class="mnav-link">About</a>
+    <a href="#skills"   class="mnav-link">Skills</a>
+    <a href="#projects" class="mnav-link">Projects</a>
+    <a href="#contact"  class="mnav-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="pill reveal">
+        <span class="ping"></span> Open to opportunities
+      </div>
+      <h1 class="hero-h1 reveal">
+        Hi, I'm<br/>
+        <span class="name-text">Brighton</span>
+      </h1>
+      <p class="hero-p reveal">
+        A curious student passionate about technology, learning,
+        and building things that make a difference.
+        Currently exploring the world of web development
+        and open source.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn-solid">See My Projects</a>
+        <a href="#contact"  class="btn-ghost">Say Hello 👋</a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="card-stack">
+        <!-- ID Card -->
+        <div class="id-card">
+          <div class="id-top">
+            <div class="id-avatar">BM</div>
+            <div class="id-header-text">
+              <div class="id-name">Brighton</div>
+              <div class="id-role">Student &amp; Learner</div>
+            </div>
+          </div>
+          <div class="id-divider"></div>
+          <div class="id-row"><span class="id-label">STATUS</span><span class="id-val active-dot">Active</span></div>
+          <div class="id-row"><span class="id-label">FOCUS</span><span class="id-val">Web Dev &amp; Open Source</span></div>
+          <div class="id-row"><span class="id-label">YEAR</span><span class="id-val">2025</span></div>
+          <div class="id-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span>
+          </div>
+        </div>
+        <!-- Floating stat chips -->
+        <div class="chip chip-a">🚀 5 Projects</div>
+        <div class="chip chip-b">📚 Always Learning</div>
+        <div class="chip chip-c">🌍 Open Source</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <p class="eyebrow reveal">— Who I Am</p>
+      <h2 class="sec-title reveal">Student. Builder.<br/><em>Dreamer.</em></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a student with a genuine love for technology and continuous learning.
+            Whether it's building my first web pages, contributing to open-source projects,
+            or exploring new concepts, I believe the best way to learn is by doing.
+          </p>
+          <p>
+            I'm currently developing my skills in web development — HTML, CSS, and JavaScript —
+            and working toward becoming a well-rounded developer who creates accessible,
+            meaningful digital experiences.
+          </p>
+          <p>
+            Outside of studying, I enjoy exploring open-source communities, reading about
+            technology history, and connecting with fellow learners around the world.
+          </p>
+          <a href="#contact" class="btn-solid" style="margin-top:1.5rem;display:inline-flex;">Let's Connect</a>
+        </div>
+        <div class="about-cards reveal">
+          <div class="about-mini-card">
+            <div class="amc-icon">🎓</div>
+            <div class="amc-title">Student</div>
+            <div class="amc-desc">Actively learning web technologies and computer science fundamentals</div>
+          </div>
+          <div class="about-mini-card">
+            <div class="amc-icon">💻</div>
+            <div class="amc-title">Builder</div>
+            <div class="amc-desc">Turning ideas into real projects — even small wins are big lessons</div>
+          </div>
+          <div class="about-mini-card">
+            <div class="amc-icon">🌱</div>
+            <div class="amc-title">Open Source</div>
+            <div class="amc-desc">Believer in sharing knowledge and building together in public</div>
+          </div>
+          <div class="about-mini-card">
+            <div class="amc-icon">🌍</div>
+            <div class="amc-title">Community</div>
+            <div class="amc-desc">Connecting with developers and learners across the globe</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <p class="eyebrow reveal">— What I Know</p>
+      <h2 class="sec-title reveal">Skills &amp;<br/><em>Technologies.</em></h2>
+
+      <div class="skills-layout">
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">🌐</span>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-label"><span>HTML5</span><span>85%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-label"><span>CSS3</span><span>78%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-label"><span>JavaScript</span><span>60%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-label"><span>Responsive Design</span><span>72%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="72"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">🛠️</span>
+            <h3>Tools &amp; Workflow</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-label"><span>Git &amp; GitHub</span><span>70%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-label"><span>VS Code</span><span>80%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-label"><span>Linux / CLI</span><span>50%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="50"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-label"><span>Figma (basics)</span><span>45%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="45"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">📚</span>
+            <h3>Currently Learning</h3>
+          </div>
+          <div class="learning-list">
+            <div class="learn-item"><span class="learn-dot"></span>React.js — Component-based UI</div>
+            <div class="learn-item"><span class="learn-dot"></span>Node.js — Server-side JavaScript</div>
+            <div class="learn-item"><span class="learn-dot"></span>Python — Scripting &amp; automation</div>
+            <div class="learn-item"><span class="learn-dot"></span>SQL — Database fundamentals</div>
+            <div class="learn-item"><span class="learn-dot"></span>Open Source contribution workflow</div>
+            <div class="learn-item"><span class="learn-dot"></span>Accessibility (WCAG guidelines)</div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">💡</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="soft-grid">
+            <span class="soft-tag">Problem Solving</span>
+            <span class="soft-tag">Curiosity</span>
+            <span class="soft-tag">Communication</span>
+            <span class="soft-tag">Teamwork</span>
+            <span class="soft-tag">Time Management</span>
+            <span class="soft-tag">Self-Learning</span>
+            <span class="soft-tag">Adaptability</span>
+            <span class="soft-tag">Attention to Detail</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <p class="eyebrow reveal">— What I've Built</p>
+      <h2 class="sec-title reveal">My Projects.</h2>
+      <p class="sec-sub reveal">A collection of things I've built while learning. Each project taught me something new.</p>
+
+      <div class="projects-grid">
+
+        <article class="proj-card featured reveal">
+          <div class="proj-top">
+            <span class="proj-badge">⭐ Featured</span>
+            <div class="proj-links">
+              <a href="#" class="plink" aria-label="GitHub repository">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="plink" aria-label="Live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Personal Portfolio Website</h3>
+          <p>This very website! Built from scratch with pure HTML, CSS, and JavaScript. Fully responsive with smooth animations, a dark theme, and no frameworks. Hosted for free on GitHub Pages.</p>
+          <div class="proj-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub Pages</span>
+          </div>
+          <div class="proj-lesson">
+            <span class="lesson-icon">💡</span>
+            <em>Learned: CSS Grid, Flexbox, Intersection Observer API, and open source workflows</em>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-badge">🌦️ API Project</span>
+            <div class="proj-links">
+              <a href="#" class="plink" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              <a href="#" class="plink" aria-label="Live"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <h3>Weather App</h3>
+          <p>A real-time weather application that fetches data from the OpenWeatherMap API. Enter any city and instantly see temperature, humidity, and conditions with a clean interface.</p>
+          <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span></div>
+          <div class="proj-lesson"><span class="lesson-icon">💡</span><em>Learned: Fetch API, async/await, JSON parsing, error handling</em></div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-badge">✅ JS App</span>
+            <div class="proj-links">
+              <a href="#" class="plink" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              <a href="#" class="plink" aria-label="Live"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <h3>To-Do List App</h3>
+          <p>A clean to-do list with add, complete, delete, and filter functionality. Saves tasks to localStorage so they persist after closing the browser. First project using DOM manipulation.</p>
+          <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>localStorage</span></div>
+          <div class="proj-lesson"><span class="lesson-icon">💡</span><em>Learned: DOM manipulation, event listeners, localStorage, CRUD operations</em></div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-badge">📝 Forms</span>
+            <div class="proj-links">
+              <a href="#" class="plink" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              <a href="#" class="plink" aria-label="Live"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <h3>Styled Contact Form</h3>
+          <p>A fully styled, accessible HTML5 contact form with built-in validation — required fields, email format check, minimum length constraints — and a polished UI. No JavaScript needed for validation.</p>
+          <div class="proj-tech"><span>HTML5</span><span>CSS3</span><span>Forms</span><span>Validation</span></div>
+          <div class="proj-lesson"><span class="lesson-icon">💡</span><em>Learned: HTML5 form validation, CSS pseudo-classes :valid/:invalid, accessibility</em></div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-badge">🎨 CSS Art</span>
+            <div class="proj-links">
+              <a href="#" class="plink" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              <a href="#" class="plink" aria-label="Live"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <h3>CSS Animation Gallery</h3>
+          <p>A collection of pure CSS animations and effects — loading spinners, hover cards, button effects, and transitions — built to practise CSS keyframes and transform properties.</p>
+          <div class="proj-tech"><span>HTML</span><span>CSS3</span><span>Animations</span><span>Keyframes</span></div>
+          <div class="proj-lesson"><span class="lesson-icon">💡</span><em>Learned: @keyframes, transform, transition, animation-delay, CSS variables</em></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <p class="eyebrow reveal">— Get In Touch</p>
+      <h2 class="sec-title reveal">Let's Talk.</h2>
+      <p class="sec-sub reveal">Whether you want to collaborate, have a question, or just want to say hi — I'd love to hear from you!</p>
+
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="contact-cards">
+            <a href="mailto:your@email.com" class="ccard">
+              <div class="ccard-icon">✉️</div>
+              <div>
+                <div class="ccard-label">Email</div>
+                <div class="ccard-val">your@email.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="ccard">
+              <div class="ccard-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div>
+                <div class="ccard-label">GitHub</div>
+                <div class="ccard-val">github.com/yourusername</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="ccard">
+              <div class="ccard-icon">💼</div>
+              <div>
+                <div class="ccard-label">LinkedIn</div>
+                <div class="ccard-val">linkedin.com/in/yourprofile</div>
+              </div>
+            </a>
+          </div>
+          <div class="open-source-note reveal">
+            <div class="osn-icon">⭐</div>
+            <div>
+              <strong>This portfolio is open source!</strong><br/>
+              <span>View the full code on GitHub — fork it, learn from it, make it yours.</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="fg">
+            <label for="cname">Brighton</label>
+            <input type="text" id="cname" name="name" placeholder="Jane Doe" required minlength="2"/>
+          </div>
+          <div class="fg">
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" name="email" placeholder="jane@example.com" required/>
+          </div>
+          <div class="fg">
+            <label for="csubject">Subject</label>
+            <input type="text" id="csubject" name="subject" placeholder="Collaboration / Hello / Question" required/>
+          </div>
+          <div class="fg">
+            <label for="cmessage">Message</label>
+            <textarea id="cmessage" name="message" rows="5" placeholder="Tell me what's on your mind..." required minlength="10"></textarea>
+          </div>
+          <button type="submit" class="btn-solid w-full" id="submitBtn">
+            Send Message &nbsp;→
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-bracket">{</span>BM<span class="logo-bracket">}</span>
+        </div>
+        <p>Designed &amp; built by <strong>BRIGHTON</strong> · Open Source on <a href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener">GitHub</a></p>
+        <p class="footer-copy">© 2025 Brighton. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
